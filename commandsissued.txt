@@ -1,0 +1,11 @@
+Commands issued to create app:
+rails new planeApp
+bundle update coffee-script-source
+rails generate scaffold plane manufacturer:string model:string seats:integer
+rails generate scaffold planeflight plane:references airline:string number:integer fromcity:string tocity:string
+rake db:migrate
+rake db:reset db:seed
+rails console
+Plane.all()
+Planeflight.all()
+rake test:models
